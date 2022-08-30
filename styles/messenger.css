@@ -1,0 +1,85 @@
+    .messenger__img {
+        flex: 1 1;
+    }
+    .messenger__icons {
+            margin-bottom: 17px;
+            column-gap: 16px;
+        }
+
+            .icon__messenger,
+            .icon__whatsapp {
+                width: 60px;
+                height: 60px;
+                border-radius: 50px;
+                background-color: #1990FF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .icon__messenger {
+                background-color: #1990FF;
+            }
+
+            .icon__whatsapp {
+                background-color: #25D366;
+            }
+
+                .messenger__icons i {
+                    align-items: center;
+                    font-size: 23px;
+                    color: var(--secondary);
+                }
+
+        .messenger__description h2 {
+            margin-bottom: 20px;
+            max-width: 10em;
+            font-weight: 400;
+        }
+            .messenger__description p {
+                color: #615E5C;
+                max-width: 29em;
+            }
+
+            .messenger__description span {
+                font-size: 0.6875rem;
+                line-height: 1.125rem;
+                margin-top: 16px;
+                color: #AEABA8;
+                max-width: 50em;
+            }
+                .messenger__description a {
+                    color: #AEABA8;
+                    text-decoration: underline;
+                }
+                    .messenger__description a:hover {
+                        text-decoration: none;
+                    }
+@media (min-width: 768px) {
+
+    .messenger__img {
+        display: block;
+    }
+
+    .messenger__img,
+    .messenger__description {
+        flex: 0 1 50%;
+    }
+}
+@media (min-width: 1024px) {
+
+    .messenger {
+        padding-top: 15px;
+        padding-bottom: 115px;
+    }
+
+        .messenger__description {
+            flex: 0 1 44%;
+        }
+}
+@media (min-width: 1280px) {
+
+    .messenger__content {
+        column-gap: 57px;
+    }
+}

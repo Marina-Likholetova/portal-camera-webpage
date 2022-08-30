@@ -1,0 +1,36 @@
+    .alexa__img {
+        flex: 1 1;
+    }
+        .alexa__description h2 {
+            margin-top: 13px;
+            margin-bottom: 20px;
+        }
+            .alexa__description p {
+                color: #615E5C;
+                max-width: 25em;
+                margin-bottom: 46px;
+            }
+
+            .alexa__img span {
+                font-size: 0.6875rem;
+                line-height: 1.125rem;
+                margin-top: 3px;
+                color: #AEABA8;
+                max-width: 40em;
+                text-align: center;
+            }
+
+            .alexa__description a {
+                background-color: var(--button-more);
+                padding: 13px 25px;
+                max-width: 127px;
+            }
+
+@media (min-width: 1024px) {
+
+    .alexa {
+        padding-top: 90px;
+        padding-bottom: 53px;
+    }
+
+}

@@ -1,0 +1,67 @@
+
+    .portal-service__box {
+        row-gap: 16px;
+    }
+
+        .card {
+            position: relative;
+            color: var(--secondary);
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            transition: all 0.5s;
+            font-size: 0;
+            flex: 1 1 auto;
+        }
+                .card:hover {
+                    transform: scale(0.9);
+                    -webkit-transform: scale(0.9);
+                    -moz-transform: scale(0.9);
+                }
+            .card__img img {
+                width: 100%;
+                height: 100%;;
+            }    
+
+            .card__text {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                text-align: center;
+                max-width: 12em;
+                margin: 0 auto;
+                padding-bottom: 32px;
+            }
+
+            .card:first-of-type .card__text {
+                max-width: 13em;
+            }
+                .card__text a {
+                    color: var(--secondary);
+                }
+                    .card__text a:last-of-type {
+                        padding-top: 15px;
+                    }
+                        .card__text a:hover {
+                            text-decoration: underline;
+                        }
+
+@media (min-width: 572px) {
+
+    .portal-service__box {
+    column-gap: 16px;
+    }
+}
+@media (min-width: 974px) {
+    .card {
+        flex: 1 1 23.5%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .portal-service {
+        padding-top: 93px;
+        padding-bottom: 28px;
+    }
+}

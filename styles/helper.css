@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red !important; */
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.color-prim {
+    color: var(--primary);
+}
+
+.color-sec {
+    color: var(--secondary);
+}
+
+.color-description {
+    color: var(--main-text);
+}
+
+.color-footer {
+    color: #9CA5B0;
+}
+
+.blck {
+    display: block;
+}
+
+.img-box img,
+.img-box svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.flx {
+    display: flex;
+}
+
+.flx-colm {
+    display: flex;
+    flex-direction: column;
+}
+
+.flx-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.jc-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jc-end {
+    justify-content: flex-end;
+}
+
+.jc-cen {
+    justify-content: center;
+}
+
+.alg-cen {
+    align-items: center;
+}
+
+.alg-end {
+    display: flex;
+    align-items: flex-end;
+}
+
+.flx-wr {
+    flex-wrap: wrap;
+}
+
+.flx-flow-rw {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flx-flow-row-rev {
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+
+.flx-flow-colm {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.flx-gr-sh {
+    flex: 1 1 auto;
+}
+
+@media (min-width: 1024px) {
+/*
+
+    .flx-flow-colm {
+        flex-flow: row wrap;
+}
+
+    .flx-flow-rw {
+    display: flex;
+    flex-flow: column wrap;
+}
+*/
+

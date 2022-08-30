@@ -1,0 +1,95 @@
+.banner__wrapper {
+    margin-top: 73px;
+    padding: 0;
+    margin-bottom: 20px;
+    background-color: #c5e4ea;
+    position: relative;
+    color: var(--primary);
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    max-height: 750px;
+    height: 100vh;
+}
+    .banner {
+        width: 100%;
+    }
+            .banner__text {
+                row-gap: 40px;
+                max-width: 30em;
+            }
+                .banner__text-box {
+                row-gap: 17px;
+                }
+                    .banner__text-box span {
+                        font: 700 1.125rem / 1.5rem 'Roboto', sans-serif;
+                        color: #434140;
+                    }
+
+                .button-box {
+                    row-gap: 10px;
+                }
+                    .banner__text button {
+                        font-weight: 700;
+                        max-width: 186px;
+                        min-width: 186px;
+                    }
+                        .button-box .btn:last-child {
+                            background-color: transparent;
+                        }
+                            .button-box .btn:last-child:hover {
+                                background-color: var(--primary);
+                            }
+
+            .banner .promo {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                transform: translate(0, 30%);
+                -webkit-transform: translate(0, 30%);
+                -moz-transform: translate(0, 30%);
+                z-index: 0;
+                background-color: #F1C0C7;
+            }
+
+                    .banner .promo:before {
+                        top: 50%;
+                        transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
+                        -moz-transform: translateY(-50%);
+                    }
+
+                .banner .promo-background {
+                    position: absolute;
+                    z-index: -1;
+                }
+
+                    .banner .promo-background::before {
+                        content: "";
+                        position: absolute;
+                        width: 9600px;
+                        right: 100%;
+                        transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
+                        -moz-transform: translateY(-50%);
+                        background-color: #F1C0C7;
+                        height: 86px;
+                    }
+@media (min-width: 480px) {
+
+    .banner .promo {
+        width: auto;
+    }
+    
+}
+@media (min-width: 1024px) {
+
+        .button-box {
+            flex-flow: row wrap;
+        }
+}
+
+
+

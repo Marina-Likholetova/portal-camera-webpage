@@ -1,0 +1,80 @@
+.story-time__wrapper {
+    background-image: url(../img/story-time.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    max-height: 750px;
+}
+    .story-time {
+        width: 100%;
+    }
+        .story-time__description {
+            max-width: 25em;
+        }
+            .story-time__img .img-box img {
+                margin: 0 auto;
+                width: 100%;
+            }
+                .story-time__description {
+                    padding: 60px 0;
+                    row-gap: 56px;
+                }
+                    .description-item__top h2 {
+                        margin-bottom: 20px;
+                    }
+
+                    .description-item__top p {
+                        margin-bottom: 23px;
+                    }
+
+                    .description-item__top a:hover {
+                        text-decoration: underline;
+                    }
+
+                    .description-item__bottom {
+                        row-gap: 16px;
+                    }
+                            .vertical-strip {
+                                position: relative;
+                                padding-left: 28px;
+                            }
+                                .vertical-strip::before,
+                                .vertical-strip::after {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 4px;
+                                }
+                                .vertical-strip::before {
+                                    background: #615E5C;
+                                    border-radius: 4px;
+                                    height: 100%;
+                                }
+
+                                .description-item__top.vertical-strip::after {
+                                    background: #ADD4E0;;
+                                    height: 90%;
+                                }
+
+@media (min-width: 1024px) {
+    .story-time__wrapper {
+        height: 100vh;
+         display: flex;
+        align-items: flex-end;
+        background-position: left;
+    }
+
+}
+
+@media (min-width: 1280px) {
+
+    .vertical-strip {
+        padding-left: 0;
+    }
+        .vertical-strip::before,
+        .vertical-strip::after {
+            margin-left: -28px;
+        }
+}

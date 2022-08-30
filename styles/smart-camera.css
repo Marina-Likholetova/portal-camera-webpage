@@ -1,0 +1,46 @@
+.smart-camera__wrapper {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(208,232,234,1) 50%);
+    width: 100%;
+}
+        .smart-camera__content h2 {
+            margin-bottom: 35px;
+            max-width: 18em;
+        }
+
+        .smart-camera__img {
+            margin-bottom: 30px;
+        }
+
+        .smart-camera__description {
+            justify-content: space-evenly;
+
+        }
+            .smart-camera__description-item {
+                max-width: 22.5em;
+            }
+                .smart-camera__description-item p {
+                    margin-top: 10px;
+                    margin-bottom: 15px;
+                    color: #434141;
+                }
+
+@media (min-width: 1024px) {
+
+    .smart-camera__content {
+        padding-bottom: 50px;
+    }
+
+        .smart-camera__description {
+            column-gap: 9.945em;
+            max-width: 73.5em;
+            margin-left: auto;
+        }
+}
+
+@media (min-width: 1280px) {
+
+    .smart-camera__description {
+        justify-content: flex-start;
+    }
+}
+

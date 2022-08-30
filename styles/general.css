@@ -1,0 +1,133 @@
+html {
+    font: 400 12px / 18px 'Roboto', sans-serif;
+    height: 100%;
+}
+
+.schema {
+    display: none;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+body > div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+body > div:first-of-type {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1307px;
+}
+
+.smaller-container {
+    max-width: 1264px;
+    margin-left: auto;
+}
+
+.btn {
+    font: 400 0.875rem / 1.25rem 'Roboto', sans-serif;
+    padding: 13px 0;
+    height: 46px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: none;
+    border-radius: 24px;
+    text-align: center;
+    transition: all linear 0.5s;
+    cursor: pointer;
+}
+    .btn:hover {
+        background-color: var(--primary);
+        color: var(--secondary);
+    }
+
+.title {
+    font: 700 3.5rem / 3.875rem 'Roboto', sans-serif;
+    color: var(--primary);
+}
+
+.title-secondary {
+    font: 700 3.125rem / 3.4375rem 'Roboto', sans-serif;
+}
+
+.sub-title {
+    font: 700 1.5rem / 1.875rem 'Roboto', sans-serif;
+}
+
+.description-style {
+    font: 400 1.0625rem / 1.4375rem 'Roboto', sans-serif;
+}
+
+.text-main-style {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.text-secondary-style {
+    font-size: 0.9375rem;
+    line-height: 1.3125rem;
+}
+.footer-text {
+    font: 400 0.6875rem / 1.0625rem 'Roboto', sans-serif;
+    color: #9CA5B0;
+}
+.more {
+    font: 400 0.875rem / 1.25rem 'Roboto', sans-serif;
+    color: var(--primary);
+}
+    .more:hover {
+        text-decoration: underline;
+    }
+
+.promo {
+    height: 86px;
+    padding-left: 100px;
+    padding-right: 20px;
+    position: relative;
+    justify-content: center;
+}
+
+    .promo:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        background-image: url(../img/promo.png);
+        width: 84px;
+        height: 54px;
+    }
+
+
+@media (min-width: 320px) {
+    html {
+        font-size: calc(12px + 4 * ((100vw - 320px) / 960));
+        line-height: calc(18px + 2 * ((100vw - 320px) / 960));
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    body > div {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    html {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+
+
+
+
